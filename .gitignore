@@ -1,0 +1,36 @@
+# Ignore Python bytecode and cache directories
+__pycache__/
+**/__pycache__/
+*.pyc
+
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore virtual environment directories
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignore project-specific files
+# GIF files (e.g., generated visualizations)
+*.gif
+
+# CSV files (e.g., experimental data or logs)
+*.csv
+
+# MP4 files (e.g., saved animations or recordings)
+*.mp4
+
+# JSON files (e.g., configuration or output files)
+*.json
+
+# Numpy array files (e.g., saved data arrays)
+*.npy
+
+# Ignore the `src` folder if it's generated or temporary
+src
