@@ -1,5 +1,7 @@
 # VernaCopter
 
+**Author**: **Teun van de Laar** ([t.a.v.d.laar@student.tue.nl](mailto:t.a.v.d.laar@student.tue.nl))
+
 This repository presents the code for VernaCopter, a framework for natural language-based drone control. The framework leverages large language models (LLMs) to translate task specifications in natural language into Signal Temporal Logic (STL) specifications. These specifications operate on user-defined objects and are used for trajectory optimization.
 
 ## Table of Contents
