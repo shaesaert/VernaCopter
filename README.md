@@ -1,6 +1,6 @@
 # VernaCopter
 
-**Author**: **Teun van de Laar** ([t.a.v.d.laar@student.tue.nl](mailto:t.a.v.d.laar@student.tue.nl))
+**Author**: **Teun van de Laar** ([tavdlaar@gmail.com](mailto:tavdlaar@gmail.com))
 
 ![Blender_trajectory_cropped_2](https://github.com/user-attachments/assets/933817f1-721d-40bd-854a-4e9ebd1ba113)
 
@@ -102,4 +102,4 @@ Other configuration options can be found in basics/setup.py
 
 ## Contact Information
 
-For any questions, please contact [t.a.v.d.laar@student.tue.nl](mailto:t.a.v.d.laar@student.tue.nl).
+For any questions, please contact [tavdlaar@gmail.com](mailto:tavdlaar@gmail.com).
