@@ -13,7 +13,7 @@ Modules:
 
 Author: Teun van de Laar
 """
-
+import logging
 from LLM.NL_to_STL import NL_to_STL
 from STL.STL_to_path import STLSolver, STL_formulas
 from STL.trajectory_analysis import TrajectoryAnalyzer
@@ -170,7 +170,8 @@ def main(pars=Default_parameters()):
                 print("New position after trajectory: ", x0)
 
         # If the trajectory generation fails, break the loop
-        except:
+        except Exception as e:
+            logging.error('Error at trajectory generation and checking %s', 'division', exc_info=e)
             print(color_text("The trajectory is infeasible.", 'yellow'))
             if pars.syntax_checker_enabled and syntax_checker_iteration <= pars.syntax_check_limit: 
                 # Check the syntax of the specification
