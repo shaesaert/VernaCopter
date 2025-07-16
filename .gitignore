@@ -2,8 +2,8 @@
 __pycache__/
 **/__pycache__/
 *.pyc
-
-
+**/*.pyc
+**/*/*.pyc
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints
 
