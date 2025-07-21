@@ -7,7 +7,7 @@ Runs the full VernaCopter + Crazyflie pipeline automatically using predefined pa
 from basics.config import One_shot_parameters
 from main import main
 from experiments.save_results import save_results
-from crazy_controller import fly_waypoints
+from .crazy_controller import fly_waypoints
 
 import numpy as np
 
