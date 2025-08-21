@@ -12,6 +12,7 @@ This mode is particularly useful for testing and benchmarking system performance
 from basics.config import One_shot_parameters               # Import the one-shot parameters
 from main import main                                       # Import the main function
 from experiments.save_results import save_results           # Import the save_results function
+from deployment.deploy_on_drone import deploy
 
 scenario_name = "treasure_hunt"                             # "reach_avoid", or "treasure_hunt"
 pars = One_shot_parameters(scenario_name = scenario_name)   # Get the parameters
@@ -24,4 +25,8 @@ except Exception as e:
     messages = []
 
 if pars.save_results:
-        save_results(pars, messages, task_accomplished, waypoints) # Save the results
+    save_results(pars, messages, task_accomplished, waypoints) # Save the results
+
+waypoints = None
+if pars.deploy_on_drone:
+     deploy(waypoints)
