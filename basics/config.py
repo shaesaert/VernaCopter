@@ -95,3 +95,5 @@ class One_shot_parameters:
         self.automated_user_input = ""               # Initialisation of the automated user input
 
         self.STL_included = True                     # Include STL in the system
+
+        self.deploy_on_drone = True                  # Physical deployment

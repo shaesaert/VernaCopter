@@ -34,3 +34,6 @@ venv.bak/
 
 # Ignore the `src` folder if it's generated or temporary
 src
+
+# Ignore compiled python code
+*.pyc
