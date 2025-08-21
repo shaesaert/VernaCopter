@@ -80,8 +80,8 @@ def activate_mellinger_controller(cf):
 
 
 def transform_wp_to_projector(x_old, y_old):
-    x_new = x_old * 1.06/5.0
-    y_new = y_old * 1.1/5.0
+    x_new = x_old * 1.15/5.0
+    y_new = y_old * 1.15/5.0
     return x_new, y_new
 
 def run_sequence(cf):
