@@ -14,6 +14,9 @@ Modules:
 Author: Teun van de Laar
 """
 import logging
+
+from exceptiongroup import catch
+
 from LLM.NL_to_STL import NL_to_STL
 from STL.STL_to_path import STLSolver, STL_formulas
 from STL.trajectory_analysis import TrajectoryAnalyzer
@@ -92,6 +95,7 @@ def main(pars=Default_parameters()):
             
             # Translate conversation into STL specification
             spec = translator.get_specs(messages)
+
             processing_feedback = False
 
         else:
@@ -99,6 +103,19 @@ def main(pars=Default_parameters()):
             spec = syntax_checked_spec
             syntax_checked_spec = None
         print("Extracted specification: ", spec)
+        try:
+            objects = scenario.objects
+            # Code that might raise an error
+            specs = eval(spec)
+            print(specs.name)
+
+        except AttributeError:
+            # Handles the case where .name doesn't exist
+            print("This spec object has no 'name' attribute.")
+
+        except Exception as e:
+            # Catches any other unexpected error
+            print(f"Something went wrong: {e}")
 
         # Initialize the solver with the STL specification
         solver = STLSolver(spec, scenario.objects, x0, T,)

@@ -5,14 +5,14 @@ You are provided with a dictionary of objects in the scene, the available Logic 
 Objects dictionary, containing object names and their bounding boxes: {object name: (xmin, xmax, ymin, ymax, zmin, zmax)}:
     OBJECTS
 
-Logic functions: 
+Logic functions or propositions:
     "STL_formulas.inside_cuboid(bounds)", "STL_formulas.outside_cuboid(bounds)"
 
 Logic operators:
     and/conjunction: "&", 
     or/disjunction: "|"
 
-STL specifications are represented as Python objects. some temporal functions operate on these objects. The syntax is like "specification.function()"
+STL specifications are represented as Python objects. Some temporal functions operate on these objects. The syntax is like "specification.function()"
 The available temporal functions are shown below.
 
 Temporal functions:

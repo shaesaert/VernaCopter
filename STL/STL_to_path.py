@@ -153,7 +153,7 @@ class STL_formulas:
             Creates an STL formula specifying that the state is outside a defined cuboid.
     """
     
-    def inside_cuboid(bounds, tolerance=0.1):
+    def inside_cuboid(bounds, tolerance=0.1, name=None):
         """
         Create an STL formula for being inside a cuboid with specified bounds.
 
@@ -195,10 +195,13 @@ class STL_formulas:
         # Take the conjuction across all the sides
         inside_cuboid = right & left & front & back & top & bottom
 
+
+        inside_cuboid.name = name
+
         return inside_cuboid
 
 
-    def outside_cuboid(bounds, tolerance=0.1):
+    def outside_cuboid(bounds, tolerance=0.1, name=None):
         """
         Create an STL formula for being outside a cuboid with specified bounds.
 
@@ -239,5 +242,6 @@ class STL_formulas:
 
         # Take the disjuction across all the sides
         outside_cuboid = right | left | front | back | top | bottom
+        outside_cuboid.name = name
 
         return outside_cuboid
