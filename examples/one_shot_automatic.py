@@ -27,6 +27,6 @@ except Exception as e:
 if pars.save_results:
     save_results(pars, messages, task_accomplished, waypoints) # Save the results
 
-waypoints = None
+waypoints = None # remove this, once we add a trajectory checker
 if pars.deploy_on_drone:
      deploy(waypoints)
