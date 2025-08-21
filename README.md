@@ -106,7 +106,8 @@ Other configuration options can be found in basics/setup.py
 ## Authors and Acknowledgments
 
 - **Author 1** - *Initial work* - [Teun van de Laar](https://github.com/TeunvdL)
-- **Author 2** - *Follow-up work* - [Sofie Haeseart](https://github.com/shaesaert)
+- **Author 2** - *Follow-up work* - Jake Rap
+- **Author 3** - *Follow-up work* - [Sofie Haeseart](https://github.com/shaesaert)
 
 ## Contact Information
 
