@@ -17,6 +17,8 @@ env.bak/
 venv.bak/
 
 # Ignore project-specific files
+#Ignore pickle files
+*.pkl
 # GIF files (e.g., generated visualizations)
 *.gif
 

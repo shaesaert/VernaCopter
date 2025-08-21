@@ -293,6 +293,9 @@ def run(waypoints,
     #### Plot the simulation results ###########################
     if plot:
         logger.plot()
+    # Keep the PyBullet window open after the simulation
+    while p.isConnected():
+        time.sleep(0.1)
 
 if __name__ == "__main__":
     #### Define and parse (optional) arguments for the script ##
