@@ -1,6 +1,6 @@
 # VernaCopter
 
-**Author**: **Teun van de Laar** ([tavdlaar@gmail.com](mailto:tavdlaar@gmail.com))
+**Author**: **Teun van de Laar** ([tavdlaar@gmail.com](mailto:tavdlaar@gmail.com)) **Jake Rap** ([j.e.w.rap@tue.nl](mailto:j.e.w.rap@tue.nl)) **Sofie Haesaert**
 
 ![Blender_trajectory_cropped_2](https://github.com/user-attachments/assets/933817f1-721d-40bd-854a-4e9ebd1ba113)
 
@@ -33,9 +33,10 @@ Before starting, ensure you have the following:
 ### Steps to Install
 
 1. **Clone the Repository**:
-
+Clone this repository and the stlpy repository
 ```bash
-git clone https://github.com/TeunvdL/VernaCopter.git
+git clone https://github.com/shaesaert/VernaCopter.git
+git clone https://github.com/shaesaert/stlpy.git
 
 cd VernaCopter
 ```
@@ -48,9 +49,15 @@ conda create -n vernacopter_env python=3.10 -y
 conda activate vernacopter_env
 ```
 
-3. **Install the Dependencies**:
 
-```bash
+
+3. **Install the Dependencies**:
+First go to the folder of stlpy and run
+```bash 
+pip install -e .
+```
+Then go to the folder of Vernacopter and run
+```bash 
 pip install -r requirements.txt
 ```
 
@@ -99,6 +106,7 @@ Other configuration options can be found in basics/setup.py
 ## Authors and Acknowledgments
 
 - **Author 1** - *Initial work* - [Teun van de Laar](https://github.com/TeunvdL)
+- **Author 2** - *Follow-up work* - [Sofie Haeseart](https://github.com/shaesaert)
 
 ## Contact Information
 
