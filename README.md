@@ -1,6 +1,6 @@
 # VernaCopter
 
-**Author**: **Teun van de Laar** ([tavdlaar@gmail.com](mailto:tavdlaar@gmail.com)) **Jake Rap** ([j.e.w.rap@tue.nl](mailto:j.e.w.rap@tue.nl)) **Sofie Haesaert**
+**Author**: **Teun van de Laar** ([tavdlaar@gmail.com](mailto:tavdlaar@gmail.com)), **Jake Rap** ([j.e.w.rap@tue.nl](mailto:j.e.w.rap@tue.nl)), & **Sofie Haesaert**
 
 ![Blender_trajectory_cropped_2](https://github.com/user-attachments/assets/933817f1-721d-40bd-854a-4e9ebd1ba113)
 
