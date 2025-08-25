@@ -64,7 +64,7 @@ def main(pars=Default_parameters()):
     translator = NL_to_STL(scenario.objects, 
                            N, 
                            pars.dt, 
-                           print_instructions=pars.print_ChatGPT_instructions, 
+                           print_instructions=False,
                            GPT_model = pars.GPT_model,)
 
     ### Main loop ###
@@ -225,7 +225,7 @@ def main(pars=Default_parameters()):
 
     print(color_text("The program is completed.", 'yellow'))
 
-    return messages, task_accomplished, all_x
+    return messages, task_accomplished, all_x, spec
 
 if __name__ == "__main__":
     pars = Default_parameters()

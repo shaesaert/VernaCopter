@@ -66,7 +66,7 @@ class One_shot_parameters:
 
         # System flags
         self.syntax_checker_enabled = True           # Enable syntax check for the trajectory
-        self.spec_checker_enabled = True             # Enable specification check
+        self.spec_checker_enabled = False             # Enable specification check
         self.dynamicless_check_enabled = False       # Enable dynamicless specification check
         self.manual_spec_check_enabled = False       # Enable manual specification check
         self.manual_trajectory_check_enabled = False # Enable manual trajectory check
@@ -81,8 +81,8 @@ class One_shot_parameters:
         self.print_ChatGPT_instructions = False      # Print ChatGPT instructions
 
         # Loop iteration limits
-        self.syntax_check_limit = 5                  # Maximum number of syntax check iterations
-        self.spec_check_limit = 5                    # Maximum number of specification check iterations
+        self.syntax_check_limit = 1                  # Maximum number of syntax check iterations
+        self.spec_check_limit = 0                    # Maximum number of specification check iterations
 
         self.instructions_file = 'one_shot_ChatGPT_instructions.txt'
         
