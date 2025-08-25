@@ -32,7 +32,7 @@ def run_one_shot(scenario_name="treasure_hunt"):
         messages = []
 
     if pars.save_results:
-        save_results(pars, messages, task_accomplished, waypoints, spec) # Save the results
+        save_results(pars, messages, task_accomplished, waypoints) # Save the results
 
     # TODO: ask user to load old feasible trajectory
     waypoints = None # remove this, once we add a trajectory checker
