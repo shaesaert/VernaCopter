@@ -15,14 +15,14 @@ Author: Teun van de Laar
 """
 import logging
 
-from exceptiongroup import catch
+# from exceptiongroup import catch
 
 from LLM.NL_to_STL import NL_to_STL
 from STL.STL_to_path import STLSolver, STL_formulas
 from STL.trajectory_analysis import TrajectoryAnalyzer
 from basics.logger import color_text
 from basics.scenarios import Scenarios
-from basics.config import Default_parameters
+from basics.config import Default_parameters, One_shot_parameters
 from visuals.run_simulation import simulate
 from visuals.visualization import Visualizer
 
@@ -229,4 +229,5 @@ def main(pars=Default_parameters()):
 
 if __name__ == "__main__":
     pars = Default_parameters()
+    # pars = One_shot_parameters()
     main()

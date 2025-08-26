@@ -1,0 +1,22 @@
+# VoiceLLM Requirements
+# ====================
+
+# Core Dependencies
+whisper-openai>=20231117  # Speech-to-text transcription
+sounddevice>=0.4.6        # Audio device handling
+numpy>=1.21.0             # Numerical processing
+tkinter                   # GUI (usually comes with Python)
+
+# Text-to-Speech Engines
+gtts>=2.3.2               # Google Text-to-Speech (High quality, 100+ languages)
+azure-cognitiveservices-speech>=1.31.0  # Microsoft Azure Speech (Professional neural voices)
+elevenlabs>=0.2.26        # ElevenLabs AI (Ultra-realistic voices)
+pyttsx3>=2.90             # Local system voices (fallback)
+
+# Audio Processing
+pydub>=0.25.1             # Audio file manipulation and playback
+
+# Optional: For better performance
+librosa>=0.10.0           # Advanced audio processing
+scipy>=1.9.0              # Scientific computing
+

@@ -1,4 +1,5 @@
 from openai import OpenAI
+import os
 
 class GPT:
     """
@@ -25,6 +26,16 @@ class GPT:
         model : str, optional
             The name of the ChatGPT model to be used (default is "gpt-3.5-turbo").
         """
+        # Check if API key is set
+        if not os.getenv('OPENAI_API_KEY'):
+            raise ValueError(
+                "OpenAI API key not found! Please set your API key using one of these methods:\n"
+                "1. Set environment variable: export OPENAI_API_KEY='your_api_key_here'\n"
+                "2. Add to your shell profile (~/.bashrc, ~/.zshrc, etc.): export OPENAI_API_KEY='your_api_key_here'\n"
+                "3. Get your API key from: https://platform.openai.com/api-keys\n"
+                "\nAfter setting the API key, restart your terminal or run: source ~/.bashrc"
+            )
+        
         self.client = OpenAI()
         self.model = model
 
@@ -50,7 +61,7 @@ class GPT:
         completion = self.client.chat.completions.create(
         model=self.model,
         messages=messages,
-        temperature=temperature,
+        # temperature=temperature,
         )     
 
         return completion.choices[0].message.content

@@ -110,5 +110,6 @@ class Scenarios:
         if self.scenario_name == "reach_avoid":
             automated_user_input = "Reach the goal while avoiding all obstacles."
         elif self.scenario_name == "treasure_hunt":
-            automated_user_input = "Go to the key in the first 30 seconds, then go to the chest. Avoid all walls. Stay in the room at all times. The door will open when you reach the key."
+            automated_user_input = ("Go to the key in the first 30 seconds, then go to the chest. Avoid all walls. "
+                                    "Stay in the room at all times. The door will open when you reach the key.")
         return automated_user_input
