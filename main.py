@@ -29,6 +29,9 @@ from visuals.visualization import Visualizer
 import numpy as np
 import matplotlib.pyplot as plt
 
+import matplotlib
+matplotlib.use('TkAgg')
+
 def main(pars=Default_parameters()):
     """
     Orchestrates the VernaCopter framework. Sets up a scenario, handles conversations 
