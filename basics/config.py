@@ -62,11 +62,11 @@ class One_shot_parameters:
         self.max_speed = 0.5                         # maximum speed in m/s 
         self.dt = 0.7                                # time step in seconds
         self.scenario_name = scenario_name           # scenario: "reach_avoid" or "treasure_hunt"
-        self.GPT_model = "gpt-3.5-turbo"             # GPT version: "gpt-3.5-turbo", "gpt-4", "gpt-4-turbo", etc.
+        self.GPT_model = "gpt-5-mini"             # GPT version: "gpt-3.5-turbo", "gpt-4", "gpt-4-turbo", etc.
 
         # System flags
         self.syntax_checker_enabled = True           # Enable syntax check for the trajectory
-        self.spec_checker_enabled = True             # Enable specification check
+        self.spec_checker_enabled = False             # Enable specification check
         self.dynamicless_check_enabled = False       # Enable dynamicless specification check
         self.manual_spec_check_enabled = False       # Enable manual specification check
         self.manual_trajectory_check_enabled = False # Enable manual trajectory check
@@ -81,8 +81,8 @@ class One_shot_parameters:
         self.print_ChatGPT_instructions = False      # Print ChatGPT instructions
 
         # Loop iteration limits
-        self.syntax_check_limit = 5                  # Maximum number of syntax check iterations
-        self.spec_check_limit = 5                    # Maximum number of specification check iterations
+        self.syntax_check_limit = 1                  # Maximum number of syntax check iterations
+        self.spec_check_limit = 0                    # Maximum number of specification check iterations
 
         self.instructions_file = 'one_shot_ChatGPT_instructions.txt'
         

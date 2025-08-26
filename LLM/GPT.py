@@ -39,7 +39,7 @@ class GPT:
         self.client = OpenAI()
         self.model = model
 
-    def chatcompletion(self, messages, temperature=0.3):
+    def chatcompletion(self, messages):
         """
         Generates a response from the ChatGPT model.
 
@@ -48,9 +48,6 @@ class GPT:
         messages : list of dict
             A list of message dictionaries representing the conversation history. Each dictionary
             should have the keys "role" (e.g., "system", "user", or "assistant") and "content" (str).
-        temperature : float, optional
-            Sampling temperature for the response generation. Lower values make the output more
-            deterministic, while higher values introduce more randomness (default is 0.3).
 
         Returns
         -------
@@ -60,8 +57,7 @@ class GPT:
 
         completion = self.client.chat.completions.create(
         model=self.model,
-        messages=messages,
-        # temperature=temperature,
+        messages=messages
         )     
 
         return completion.choices[0].message.content
