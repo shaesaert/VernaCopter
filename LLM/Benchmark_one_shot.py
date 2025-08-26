@@ -2,7 +2,7 @@ from examples.one_shot_automatic import run_one_shot
 import traceback
 
 
-def run_multiple_times(n=20, scenario="reach_avoid"):
+def run_multiple_times(n=20, scenario="treasure_hunt"):
     success_count = 0
     results = []
     specs = []
@@ -30,4 +30,4 @@ def run_multiple_times(n=20, scenario="reach_avoid"):
 
 
 if __name__ == "__main__":
-    run_multiple_times(20)
+    run_multiple_times(30)
