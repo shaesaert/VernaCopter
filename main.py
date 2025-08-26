@@ -137,9 +137,11 @@ def main(pars=Default_parameters()):
             inside_objects_array = trajectory_analyzer.get_inside_objects_array()  # Get array with trajectory analysis
             visualizer = Visualizer(x, scenario)                            # Initialize the visualizer
             fig, ax = visualizer.visualize_trajectory()                     # Visualize the trajectory
-            plt.pause(1)                                                    # Pause for visualization
+            plt.show()
+            input("press key to continue")                                                    # Pause for visualization
             fig, ax = trajectory_analyzer.visualize_spec(inside_objects_array) # Visualize the trajectory analysis
-            plt.pause(1)                                                    # Pause for visualization
+            plt.show()
+            input("press key to continue")                             # Pause for visualization
 
             # Specification checker
             if pars.spec_checker_enabled and spec_checker_iteration < pars.spec_check_limit:
