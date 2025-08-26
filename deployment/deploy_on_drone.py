@@ -74,7 +74,7 @@ def run_sequence(cf, waypoints: str, waypoint_duration: float = 0.75):
     if waypoints is None:
         waypoints = np.load("/home/amc/crazyflie-lib-python/examples/mocap/4_waypoints.npy")
     # Use first half if the array is concatenated
-    waypoints = waypoints[:, :waypoints.shape[1] // 2]
+    # waypoints = waypoints[:, :waypoints.shape[1] // 2]
 
     # Takeoff
     commander.takeoff(0.15, 2.0)

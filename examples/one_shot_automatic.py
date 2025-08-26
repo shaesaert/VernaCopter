@@ -20,7 +20,7 @@ except Exception as e:
     print("Motion capturing not installed, no real deployment possible")
     print(e)
 
-def run_one_shot(scenario_name="treasure_hunt"):
+def run_one_shot(scenario_name="reach_avoid"): # treasure_hunt, reach_avoid
 
     pars = One_shot_parameters(scenario_name = scenario_name)   # Get the parameters
 
@@ -35,8 +35,8 @@ def run_one_shot(scenario_name="treasure_hunt"):
         save_results(pars, messages, task_accomplished, waypoints) # Save the results
 
     # TODO: ask user to load old feasible trajectory
-    waypoints = None # remove this, once we add a trajectory checker
-    if pars.deploy_on_drone & deployment:
+    # waypoints = None # remove this, once we add a trajectory checker
+    if pars.deploy_on_drone and deployment and (waypoints is not None):
          deploy(waypoints)
 
     return messages, task_accomplished, waypoints, spec
@@ -44,5 +44,5 @@ def run_one_shot(scenario_name="treasure_hunt"):
 
 if __name__ == "__main__":
     # Allow running standalone
-    _, task_accomplished, _ = run_one_shot()
+    _, task_accomplished, _, _ = run_one_shot()
     print("Task accomplished:", task_accomplished)
